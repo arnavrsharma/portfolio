@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spitfire Nepal | Paid Ads Agency</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #050505;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .top-glow {
+      position: absolute;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(255, 76, 50, 0.75), rgba(255, 76, 50, 0.18) 38%, transparent 70%);
+      filter: blur(35px);
+      opacity: 0.85;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .side-glow {
+      position: absolute;
+      right: -180px;
+      top: 820px;
+      width: 360px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(255, 70, 48, 0.85), rgba(255, 70, 48, 0.12) 42%, transparent 70%);
+      filter: blur(25px);
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Navbar */
+
+    .nav-wrap {
+      padding-top: 36px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(12, 12, 12, 0.78);
+      backdrop-filter: blur(18px);
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.03);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+.logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.72);
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff3d2e, #ff6b4a);
+      color: white;
+      box-shadow: 0 0 25px rgba(255, 67, 45, 0.45);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 36px rgba(255, 67, 45, 0.7);
+    }
+
+    .btn-dark {
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .btn-dark:hover {
+      background: rgba(255, 255, 255, 0.11);
+      color: #ffffff;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      text-align: center;
+      padding: 120px 0 70px;
+      position: relative;
+    }
+
+    .social-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 13px;
+    }
+
+    .avatars {
+      display: flex;
+    }
+
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid #050505;
+      margin-left: -8px;
+      background: linear-gradient(135deg, #ff6a4a, #f2f2f2);
+      display: grid;
+      place-items: center;
+      font-size: 10px;
+      color: #050505;
+      font-weight: 800;
+    }
+
+    .avatar:first-child {
+      margin-left: 0;
+    }
+
+    .stars {
+      color: #ffffff;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: clamp(46px, 7vw, 92px);
+      line-height: 0.98;
+      letter-spacing: -4px;
+      font-weight: 700;
+    }
+
+    .hero h1 span {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 26px auto 0;
+      color: rgba(255, 255, 255, 0.52);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-orb {
+      position: relative;
+      margin: 86px auto 0;
+      width: min(620px, 90vw);
+      height: 160px;
+      background: radial-gradient(ellipse at center, #fff8dc 0%, #ff9b5a 18%, #ff3f2b 32%, rgba(255, 63, 43, 0.1) 58%, transparent 72%);
+      filter: blur(12px);
+      opacity: 0.95;
+      border-radius: 50%;
+    }
+
+    .hero-orb::after {
+      content: "";
+      position: absolute;
+      inset: 82px 40px auto;
+      height: 18px;
+      background: rgba(255, 255, 255, 0.68);
+      filter: blur(10px);
+      border-radius: 50%;
+    }
+
+    /* Clients */
+
+    .clients {
+      padding: 35px 0 120px;
+      text-align: center;
+
+    }
+
+    .eyebrow {
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+
+    .client-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    .client-card {
+      height: 78px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      display: grid;
+      place-items: center;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+    }
+
+    .client-card small {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.42);
+      margin-top: 4px;
+      letter-spacing: 0;
+    }
+
+    /* Comparison */
+
+    .comparison {
+      padding: 40px 0 100px;
+      text-align: center;
+    }
+
+    .section-tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 12px;
+      margin-bottom: 26px;
+    }
+
+    .comparison h2 {
+      font-size: clamp(34px, 4.8vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      font-weight: 700;
+      max-width: 720px;
+      margin: 0 auto 62px;
+    }
+
+    .comparison h2 span {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .compare-title {
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: rgba(255, 255, 255, 0.38);
+      font-weight: 700;
+    }
+
+    .compare-title.active {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .compare-box {
+      padding: 26px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      min-height: 260px;
+    }
+
+    .compare-box.highlight {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 0%, rgba(255, 80, 50, 0.52), transparent 38%),
+        rgba(255, 255, 255, 0.04);
+      box-shadow: 0 0 60px rgba(255, 70, 48, 0.12);
+    }
+
+    .compare-box ul {
+      list-style: none;
+      display: grid;
+      gap: 18px;
+    }
+
+    .compare-box li {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 15px;
+      line-height: 1.5;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .bad {
+      color: rgba(255, 255, 255, 0.42);
+    }
+
+    .good {
+      color: #ff6a4a;
+    }
+
+    /* Services */
+
+    .services {
+      padding: 20px 0 110px;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 54px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(34px, 4.8vw, 58px);
+      letter-spacing: -2px;
+      margin-bottom: 16px;
+    }
+
+    .section-head p {
+      max-width: 610px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.52);
+      line-height: 1.7;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      background: rgba(255, 255, 255, 0.055);
+      border-color: rgba(255, 90, 60, 0.25);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ff3d2e, #ff8a5b);
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      font-size: 22px;
+      box-shadow: 0 0 28px rgba(255, 65, 45, 0.35);
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* Process */
+
+    .process {
+      padding: 20px 0 110px;
+    }
+
+    .steps {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px;
+      align-items: start;
+      padding: 26px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ff6749;
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .step p {
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.65;
+    }
+
+    /* FAQ */
+
+    .faq {
+      padding: 20px 0 110px;
+    }
+
+    .faq-list {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      color: white;
+      border: none;
+      padding: 22px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .faq-question span {
+      font-size: 22px;
+      color: #ff6749;
+      transition: 0.25s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.28s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 24px 22px;
+      color: rgba(255, 255, 255, 0.52);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 180px;
+    }
+
+    .faq-item.open .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 40px 0 120px;
+      text-align: center;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+      padding: 80px 30px;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 78, 50, 0.45), transparent 40%),
+        rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cta-box h2 {
+      font-size: clamp(36px, 5vw, 64px);
+      letter-spacing: -2.5px;
+      line-height: 1.05;
+      max-width: 740px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-box p {
+      color: rgba(255, 255, 255, 0.54);
+      max-width: 590px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 14px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+    .case-studies {
+  padding: 40px 0 120px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.case-card {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 32px;
+  transition: .3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,90,60,.3);
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.case-header h3 {
+  font-size: 28px;
+}
+
+.case-header span {
+  color: #ff6a4a;
+  font-size: 13px;
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+}
+
+.metric h4 {
+  font-size: 32px;
+  color: #ff6a4a;
+}
+
+.metric p {
+  color: rgba(255,255,255,.6);
+  font-size: 13px;
+}
+
+.case-card ul {
+  list-style: none;
+}
+
+.case-card li {
+  padding: 10px 0;
+  color: rgba(255,255,255,.7);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+@media(max-width:900px){
+  .case-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .navbar {
+        width: min(680px, 92%);
+        justify-content: space-between;
+        position: relative;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        padding: 22px;
+        border-radius: 16px;
+        background: rgba(12, 12, 12, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .navbar .btn-primary {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 95px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2.5px;
+      }
+
+      .client-logos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .compare-grid,
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding-top: 75px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .social-proof {
+        flex-direction: column;
+      }
+
+      .client-logos {
+        grid-template-columns: 1fr;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="top-glow"></div>
+    <div class="side-glow"></div>
+
+    <header class="nav-wrap">
+      <nav class="navbar">
+        <a href="#" class="brand">
+  <img src="spitfirelogo.png" alt="Spitfire Nepal" class="logo-img">
+  Spitfire Nepal
+</a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+
+        <a href="https://calendly.com/spifirenepal/a-free-consultation-call-with-spitfire-advertising" class="btn btn-primary">Book a call</a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="container">
+          <div class="social-proof">
+            <div class="avatars">
+              <div class="avatar">A</div>
+              <div class="avatar">R</div>
+              <div class="avatar">N</div>
+              <div class="avatar">S</div>
+              <div class="avatar">M</div>
+            </div>
+
+            <div>
+              <div class="stars">★★★★★</div>
+<span>Founder-led growth partnerships</span>
+            </div>
+          </div>
+
+         <h1>
+  Build your company with a <span>growth partner</span>, not another agency.
+</h1>
+
+        <p>
+  We work with a small number of founders and businesses to identify bottlenecks,
+  solve growth problems, and build stronger companies. We're not another agency—
+  we're an extension of your team.
+</p>
+
+          <div class="hero-actions">
+            <a href="https://calendly.com/spifirenepal/a-free-consultation-call-with-spitfire-advertising" class="btn btn-primary">Book a call</a>
+            <a href="#services" class="btn btn-dark">Learn More</a>
+          </div>
+
+          <div class="hero-orb"></div>
+        </div>
+      </section>
+<section class="philosophy">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Our Philosophy</span>
+
+      <h2>We don't work like traditional agencies.</h2>
+
+      <p>
+        Most agencies sell deliverables.
+
+        We solve business problems.
+
+        We partner with a small number of founders and businesses, work closely
+        with their teams, identify bottlenecks, and help build stronger companies.
+
+        Think of us as an external co-founder focused on growth.
+      </p>
+    </div>
+  </div>
+</section>
+      
+      <section class="case-studies" id="case-studies">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Client Success Stories</span>
+      <h2>Real Results. Real Businesses.</h2>
+      <p>
+        We don't just run campaigns. We create measurable growth that directly
+        impacts followers, views, leads, and revenue.
+      </p>
+    </div>
+
+    <div class="case-grid">
+
+      <div class="case-card">
+        <div class="case-header">
+          <h3>TBG Nepal</h3>
+          <span>Education</span>
+        </div>
+
+        <div class="case-metrics">
+          <div class="metric">
+            <h4>23K+</h4>
+            <p>TikTok Followers</p>
+          </div>
+
+          <div class="metric">
+            <h4>20M+</h4>
+            <p>Organic TikTok Views</p>
+          </div>
+
+          <div class="metric">
+            <h4>12M+</h4>
+            <p>Instagram Views</p>
+          </div>
+
+          <div class="metric">
+            <h4>1500+</h4>
+            <p>IELTS Enrollments</p>
+          </div>
+        </div>
+
+        <ul>
+          <li>Grew TikTok from 700 followers to 23,000+ followers</li>
+          <li>Generated over 20 million organic TikTok views</li>
+          <li>Generated over 12 million organic Instagram views</li>
+          <li>Drove more than 1,500 IELTS student enrollments through social media</li>
+        </ul>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <h3>Ganapati Jewellers</h3>
+          <span>Luxury Retail</span>
+        </div>
+
+        <div class="case-metrics">
+          <div class="metric">
+            <h4>16K+</h4>
+            <p>TikTok Followers</p>
+          </div>
+
+          <div class="metric">
+            <h4>10M+</h4>
+            <p>Views</p>
+          </div>
+
+          <div class="metric">
+            <h4>$0.07</h4>
+            <p>CPM</p>
+          </div>
+
+          <div class="metric">
+            <h4>1 Cr+</h4>
+            <p>Revenue Generated</p>
+          </div>
+        </div>
+
+        <ul>
+          <li>Scaled TikTok to over 16,000 followers</li>
+          <li>Generated more than 10 million views</li>
+          <li>Achieved CPMs as low as $0.07</li>
+          <li>Generated over NPR 1 Crore in revenue from social media</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag">Services</span>
+<h2>How we help businesses grow.</h2>            <p>
+  Growth isn't always a marketing problem. We help founders identify bottlenecks,
+  improve acquisition systems, and build companies that scale.
+</p>
+          </div>
+
+          <div class="service-grid">
+            <div class="service-card">
+              <div class="service-icon">📈</div>
+<h3>Growth Strategy</h3>              <p>
+                Identifying the highest-leverage opportunities inside your business and creating
+a roadmap for sustainable growth.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🎯</div>
+<h3>Customer Acquisition</h3>              <p>
+Building systems that consistently bring qualified customers into your business.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">⚡</div>
+<h3>Business Optimization</h3>              <p>
+                Finding bottlenecks, inefficiencies, and missed opportunities that limit growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag">Process</span>
+<h2>How we work with founders.</h2>            <p>
+              We keep things focused, transparent, and measurable from the first call to the
+              scaling stage.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">01</div>
+              <div>
+<h3>Understand The Business</h3>
+                <p>
+                  We study your offer, audience, competitors, past campaigns, and growth bottlenecks.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">02</div>
+              <div>
+<h3>Identify Bottlenecks</h3>              <p>
+                  We build your ad structure, tracking, creative direction, landing page plan, and testing roadmap.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">03</div>
+              <div>
+<h3>Implement Solutions</h3>                <p>
+                  Campaigns go live, data comes in, and we continuously improve what works while cutting what does not.
+                </p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-number">04</div>
+              <div>
+<h3>Scale What Works</h3>                <p>
+                  Once winning campaigns are found, we increase spend carefully while protecting profitability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag">FAQs</span>
+            <h2>Questions before we start?</h2>
+            <p>
+              Here are some common questions brands ask before working with Spitfire Nepal.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button class="faq-question">
+                How do you tailor Google Ads strategies for different businesses?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We start with your business model, customer journey, search demand, offer strength,
+                  and sales goals. Then we create campaigns around profitable intent, not just traffic.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What is unique about your Meta Ads approach?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We focus heavily on creative testing, audience psychology, offer positioning, and
+                  landing page alignment instead of relying only on targeting settings.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Do you work with small businesses?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. We work with growing businesses that have a serious offer, clear goals,
+                  and enough budget to test campaigns properly.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does it take to see results?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Some campaigns show early signals within days, but strong optimization usually needs
+                  a few weeks of testing, learning, and improvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-box">
+<h2>Looking for a growth partner?</h2>            <p>
+  We only work with a limited number of businesses at a time. If you're looking
+  for a team that thinks like owners rather than vendors, let's talk.
+</p>
+            <a href="mailto:hello@spitfirenepal.com" class="btn btn-primary">Apply To Work Together</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Spitfire Nepal. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQs</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      menuBtn.textContent = navLinks.classList.contains("show") ? "×" : "☰";
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        menuBtn.textContent = "☰";
+      });
+    });
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      const question = item.querySelector(".faq-question");
+
+      question.addEventListener("click", () => {
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove("open");
+          }
+        });
+
+        item.classList.toggle("open");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
